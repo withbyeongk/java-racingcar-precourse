@@ -1,13 +1,11 @@
 package racingcar;
 
-import camp.nextstep.edu.missionutils.Console;
 import camp.nextstep.edu.missionutils.Randoms;
 import java.util.ArrayList;
 
 
 public class Round {
     private int				stage;		// 전진 또는 멈춤 횟수(입력 받을 것)
-    private int				carNum;		// 자동차 수
     private ArrayList<Car>	carList;	// 참가 차량 리스트
 
     public Round() {
@@ -66,7 +64,7 @@ public class Round {
     public void winner(){
         int max = maxPosition();
 
-        ArrayList<Car> winners = new ArrayList<Car>(stage);
+        ArrayList<Car> winners = new ArrayList<>(stage);
 
         for(int i=0; i<carList.size(); i++){
             if( max == carList.get(i).getPosition() ){
