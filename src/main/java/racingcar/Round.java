@@ -18,7 +18,6 @@ public class Round {
         this.carList = Input.addCars();
 
     }
-
     public void run(){
         for(int s=0; s<stage; s++){
             System.out.println();
